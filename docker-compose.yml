@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  test-app:
+    environment:
+      - APP_PORT=80
+      - ARTICLES_NUMBER=3000
+      - ARTICLES_PER_NODE=10
+      - FRONTEND_FOLDER=frontend/build
+    container_name: test-app
+    image: test-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8088:80"    

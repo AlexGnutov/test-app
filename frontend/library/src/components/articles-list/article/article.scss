@@ -1,0 +1,53 @@
+.article-item {
+  &_container {
+    display: block;
+    margin: 0 0 5px 0;
+  }
+
+  &_header {
+    position: relative;
+    background-color: lightgrey;
+    padding: 5px 10px;
+    border-radius: 3px;
+    min-height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &__link {
+      text-decoration: none;
+
+      &:hover ~ * {
+        display: block;
+      }
+
+      &-ru {
+        color: red;
+      }
+      &-en {
+        color: darkblue;
+      }
+    }
+
+    &__author {
+      position: absolute;
+      display: none;
+      background-color: wheat;
+    }
+
+    &__corner-group {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      display: flex;
+    }
+
+    &__corner-group > *:nth-child(n+2) {
+      margin-left: 5px;
+    }
+  }
+
+  &_content {
+    display: block;
+    padding: 5px 0 20px 50px;
+  }
+}

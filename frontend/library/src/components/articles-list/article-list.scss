@@ -1,0 +1,19 @@
+.article-list {
+  &__container {
+      width: 600px;
+      height: 700px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: darkgrey;
+      overflow-y: auto;
+  }
+
+  &__header {
+    background-color: darkgrey;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+}

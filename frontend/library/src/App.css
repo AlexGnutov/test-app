@@ -1,0 +1,21 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.grey-button {
+    background-color: #6b6b6b;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+}

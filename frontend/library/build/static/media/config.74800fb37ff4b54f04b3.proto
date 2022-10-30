@@ -1,0 +1,16 @@
+package configpackage;
+syntax = "proto3";
+
+message Message {
+    string status = 1;
+    repeated Article data = 2;
+}
+
+message Article {
+    string title = 1;
+    string author = 2;
+    string text = 3;
+    string id = 4;
+    string language = 5;
+    repeated string references = 6;
+}
